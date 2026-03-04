@@ -4,7 +4,7 @@
 
 Claude Code is Anthropic's **agentic coding assistant** that runs directly in your terminal. Unlike a simple chatbot, it can read your files, run commands, edit code, manage git, and even orchestrate multiple AI sub-agents — all from your command line.
 
-- 📖 **Official Docs:** [docs.claude.com](https://docs.claude.com/en/claude-code/overview)
+- 📖 **Official Docs:** [code.claude.com](https://code.claude.com/docs/en/overview)
 - 💻 **Install (recommended):** `curl -fsSL https://claude.ai/install.sh | bash`
 - 💻 **Install (legacy npm, deprecated):** `npm install -g @anthropic-ai/claude-code`
 - 🔑 **Requires:** A Claude.ai Pro/Max subscription **or** an Anthropic API key ([console.anthropic.com](https://console.anthropic.com))
@@ -31,7 +31,7 @@ Before you start, you can control **which Claude model** is used and **how hard 
 - The model can be changed from the default (e.g., switching between Sonnet, Opus, Haiku).
 - **Higher effort = slower + more tokens consumed = better results for complex tasks.**
 
-📖 See: [Model selection docs](https://docs.claude.com/en/claude-code/overview)
+📖 See: [Model selection docs](https://code.claude.com/docs/en/overview)
 
 ---
 
@@ -48,7 +48,7 @@ When you run `/init` in a project folder, Claude Code creates a `CLAUDE.md` file
 
 > **Tip:** Put things in `CLAUDE.md` like: *"Always use TypeScript. Never use `var`. Tests go in `/tests`."*
 
-📖 See: [CLAUDE.md docs](https://docs.claude.com/en/claude-code/memory)
+📖 See: [CLAUDE.md docs](https://code.claude.com/docs/en/memory)
 
 ---
 
@@ -128,7 +128,7 @@ When the context window is nearly full, Claude has to "compress" older informati
 
 **Best practice:** Start a fresh session (`/clear`) for each new major task.
 
-📖 See: [Context window management](https://docs.claude.com/en/claude-code/memory)
+📖 See: [Context window management](https://code.claude.com/docs/en/memory)
 
 ---
 
@@ -154,7 +154,7 @@ Enables **extended thinking**, where Claude reasons step-by-step before answerin
 
 > **Beginner tip:** For precise control over reasoning depth, set the effort level in `/model`. Use the thinking keywords as a quick nudge on top of that.
 
-📖 See: [Extended thinking docs](https://docs.claude.com/en/claude-code/overview)
+📖 See: [Extended thinking docs](https://code.claude.com/docs/en/overview)
 
 ---
 
@@ -290,7 +290,7 @@ Think of it this way: Claude knows *how to code*, but MCP lets it *actually inte
 Claude LLM  ←→  MCP Protocol  ←→  Any MCP-compatible software
 ```
 
-📖 See: [MCP documentation](https://docs.claude.com/en/claude-code/mcp)
+📖 See: [MCP documentation](https://code.claude.com/docs/en/mcp)
 📖 MCP spec: [modelcontextprotocol.io](https://modelcontextprotocol.io)
 
 ---
@@ -355,7 +355,7 @@ To add an MCP server:
 claude mcp add <server-name>
 ```
 
-📖 See: [MCP server configuration](https://docs.claude.com/en/claude-code/mcp)
+📖 See: [MCP server configuration](https://code.claude.com/docs/en/mcp)
 
 ---
 
@@ -389,7 +389,7 @@ Examples:
 
 > Skills can also be **automatically triggered** — Claude can detect the right skill to use based on context (rather than you manually typing `/skill name` every time).
 
-📖 See: [Claude Code customization](https://docs.claude.com/en/claude-code/customization)
+📖 See: [Claude Code customization](https://code.claude.com/docs/en/skills)
 
 ---
 
@@ -403,7 +403,7 @@ Hooks are **automated triggers** that run code at specific points in Claude's li
 
 **Example use case:** Automatically run your linter every time Claude edits a file, so you always catch syntax errors immediately.
 
-📖 See: [Hooks documentation](https://docs.claude.com/en/claude-code/hooks)
+📖 See: [Hooks documentation](https://code.claude.com/docs/en/hooks)
 
 ---
 
@@ -778,7 +778,7 @@ This is an important mindset. Claude Code is a flexible tool — different devel
 
 | Resource | URL |
 |---|---|
-| Official Docs | [docs.claude.com/en/claude-code/overview](https://docs.claude.com/en/claude-code/overview) |
+| Official Docs | [code.claude.com/docs/en/overview](https://code.claude.com/docs/en/overview) |
 | MCP Protocol | [modelcontextprotocol.io](https://modelcontextprotocol.io) |
 | JetBrains Plugin | [plugins.jetbrains.com/plugin/24358](https://plugins.jetbrains.com/plugin/24358-claude-code) |
 | Anthropic Console | [console.anthropic.com](https://console.anthropic.com) |
@@ -787,8 +787,8 @@ This is an important mindset. Claude Code is a flexible tool — different devel
 | Fast mode | [code.claude.com/docs/en/fast-mode](https://code.claude.com/docs/en/fast-mode) |
 | TMUX Guide | [hamvocke.com/blog/a-quick-and-easy-guide-to-tmux](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) |
 | Git Worktree | [git-scm.com/docs/git-worktree](https://git-scm.com/docs/git-worktree) |
-| Prompting Guide | [docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview) |
+| Prompting Guide | [platform.claude.com/docs/en/build-with-claude/prompt-engineering](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview) |
 
 ---
 
-*Guide based on a live Claude Code demo. All slash commands and features are subject to change — always check the [official docs](https://docs.claude.com/en/claude-code/overview) for the latest.*
+*Guide based on a live Claude Code demo. All slash commands and features are subject to change — always check the [official docs](https://code.claude.com/docs/en/overview) for the latest.*
