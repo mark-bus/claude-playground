@@ -467,16 +467,19 @@ Auto-invoked whenever Claude detects frontend work. Provides opinionated guidanc
 
 #### 🔁 `ralph-loop`
 
-Based on the "Ralph Wiggum technique" — a simple `while true` Bash loop that repeatedly feeds an agent a prompt file, letting it iterate on its own output until a task is complete. Useful for long-running autonomous tasks where you want Claude to self-improve without manual re-prompting.
+Available in the **[official plugin store](https://github.com/anthropics/claude-plugins-official)**. Turns Claude Code into an autonomous agent that iterates on a task for hours or even days without human intervention. It uses a stop-hook to intercept session exits and re-feed the same prompt, while preserving all file modifications and git history between iterations.
 
 ```bash
-# Conceptually, ralph-loop does this:
-while true; do
-  claude --prompt task.md
-done
+/ralph-loop "fix all failing tests" --max-iterations 10 --completion-promise "DONE"
 ```
 
-Think of it as a poor man's autonomous agent loop — surprisingly effective for writing, refactoring, and test generation.
+- The loop runs until Claude outputs the completion promise string (e.g. `DONE`) or hits the iteration limit
+- The prompt stays the same each iteration — Claude improves by reading its own previous changes in the codebase
+- Always set `--max-iterations` as a safety net
+
+Best for greenfield projects with clear, automated success criteria (e.g. "all tests pass", "no lint errors"). Less suited for vague or design-heavy tasks.
+
+📖 See: [ralph-loop plugin](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/ralph-loop)
 
 ---
 
