@@ -546,6 +546,8 @@ claude plugin install <repo-url>
 
 This makes it trivial to standardise workflows across a whole engineering team — one plugin install and everyone gets the same code review process, the same commit message format, the same architecture review flow.
 
+> 💡 **Tip:** Check out **[skills.sh](https://skills.sh)** — a cross-platform skill directory by Vercel where you can browse, install, and share agent skills with a single command (`npx skills add <skill-name>`), and it works with Claude Code as well as other AI coding tools.
+
 📖 See: [Create plugins — Claude Code Docs](https://code.claude.com/docs/en/plugins) · [Plugin marketplace](https://claude.com/plugins)
 
 ---
